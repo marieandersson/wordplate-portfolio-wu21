@@ -1,5 +1,6 @@
 @import  './base.css';
 @import './footer.css';
+@import './admin.css';
 
 @tailwind base;
 @tailwind components;

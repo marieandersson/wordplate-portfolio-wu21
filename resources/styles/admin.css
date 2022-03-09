@@ -1,0 +1,3 @@
+.wp-block-acf-latest-posts .acf-block-preview a {
+  pointer-events: none;
+}

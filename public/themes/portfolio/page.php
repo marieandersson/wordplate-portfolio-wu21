@@ -2,7 +2,7 @@
 
 <?php if (have_posts()): ?>
 
-    <div class="prose">
+    <div class="prose max-w-none">
         <?php while (have_posts()): the_post(); ?>
 
             <h1><?php the_title(); ?></h1>
