@@ -6,6 +6,8 @@ add_action('after_setup_theme', function () {
     add_theme_support('menus');
     // Enable featured image
     add_theme_support('post-thumbnails');
+    // Add extra layer of block styles
+    add_theme_support('wp-block-styles');
 });
 
 // Register project custom post type.
@@ -18,6 +20,8 @@ require get_template_directory().'/fields/project.php';
 require get_template_directory().'/fields/options.php';
 // Register custom block for latest posts
 require get_template_directory().'/blocks/latest-posts.php';
+// Register block pattern for resume item
+require get_template_directory().'/block-patterns/resume-item.php';
 
 // Add Tailwind classes to put footer at the bottom of the viewport
 add_filter('body_class', function ($classes) {
